@@ -6,7 +6,7 @@ def Sanitize():
     shellcodeAddress = shellcodeAddress.replace("0x", "")
     shellcodeAddress = shellcodeAddress.replace("h", "")
     if (len(shellcodeAddress) % 2) != 0:
-       shellcodeAddress = shellcodeAddress + "0"
+       shellcodeAddress = "0" + shellcodeAddress
     vector = ""
     final_vector = ""
     for i in shellcodeAddress:
